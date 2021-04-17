@@ -1,4 +1,6 @@
 ﻿using System;
+// "using" directive is much like require or import in Node
+// lets us use the corresponding namespace (System) without needing to qualify its use when using one of its members
 
 namespace CatWorx.BadgeMaker
 // namespaces are like containers that have members
@@ -9,6 +11,12 @@ namespace CatWorx.BadgeMaker
     class Program
     {
         static void Main(string[] args)
+        // "main" method serves as entry point to application - invoked when program runs and where we place the code
+        // in order for "main" to be recognized as entry point, the following syntax must be followed:
+
+        // There can only be one entry point to a program
+        // the keyword "void" signifies that the return of this executable method will be void
+        // the keyword "static" implies that the scope of this method is on the class level, not the object level, and can thus be invoked without having to first create a new class instance. Hence the Main() method can be run as soon as the program runs.
         {
             Console.WriteLine("Hello World!");
         }
