@@ -18,7 +18,19 @@ namespace CatWorx.BadgeMaker
         // the keyword "void" signifies that the return of this executable method will be void
         // the keyword "static" implies that the scope of this method is on the class level, not the object level, and can thus be invoked without having to first create a new class instance. Hence the Main() method can be run as soon as the program runs.
         {
-            Console.WriteLine("Hello World!");
+            // Console.WriteLine("Hello World!");
+            string greeting = "Hello";
+            greeting = greeting + "World";
+            Console.WriteLine("greeting" + greeting);
+
         }
+        // C# data types must be declared each time, unlike Javascript where just declaring var = x allows for inference of data type
+        // Example:
+        // JavaScript
+        // var carModel = "Explorer";
+        // var carPrice = 500;
+        // C#
+        // string carModel = "Intrepid";
+        // int carPrice = 500;
     }
 }
