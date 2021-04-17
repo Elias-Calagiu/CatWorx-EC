@@ -21,8 +21,9 @@ namespace CatWorx.BadgeMaker
             // Console.WriteLine("Hello World!");
             string greeting = "Hello";
             greeting = greeting + "World";
-            Console.WriteLine("greeting" + greeting);
-
+            // Console.WriteLine("greeting" + greeting);
+            Console.WriteLine($"greeting {greeting}");
+            Console.WriteLine("greeting: {0}", greeting);
         }
         // C# data types must be declared each time, unlike Javascript where just declaring var = x allows for inference of data type
         // Example:
